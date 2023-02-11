@@ -20,13 +20,13 @@ export default function Cart() {
                 setCarts([])
             }}>clear cart</button>
             <ul>
-                {carts.map((cart: any, index: number) => {
+                {carts?.map((cart: any, index: number) => {
                     return (
                         <li key={index} className="my-3"><span>{cart.name}: price {cart.price}</span>
                             <button className="bg-red-500 ml-3 text-white px-3 py-0.5 hover:bg-red-700 transition hover:duration-700"
                                 onClick={() => {
-                                    setProductName(cart.name);
-                                    const data = carts.filter((cart: any) => cart.name !== productName);
+                                    setProductName(cart?.name);
+                                    const data = carts?.filter((cart: any) => cart?.name !== productName);
                                     console.log("item", data)
                                     setCarts([...data])
                                 }}
