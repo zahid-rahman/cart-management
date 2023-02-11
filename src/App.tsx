@@ -4,8 +4,12 @@ import Homepage from './pages/Homepage';
 import Layout from './components/Layout';
 import Cart from './pages/Cart';
 import { CartContextProvider } from './context/useCart';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+
+  }, [])
   return (
     <div className="App">
       <BrowserRouter>

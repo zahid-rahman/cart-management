@@ -8,7 +8,7 @@ export default function Layout ({ children }: any) {
         <>
             <div className="w-1/2 ml-auto">
                 total product  
-                <span className="ml-2 text-sm">{carts.length}</span>
+                <span className="ml-2 text-sm">{carts?.length}</span>
                 <Link to="/cart" className="ml-5">view cart</Link>
                 <Link to="/" className="ml-5">homepage</Link>
             </div>
